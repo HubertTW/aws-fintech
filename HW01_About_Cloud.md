@@ -50,7 +50,7 @@ Forbes預測2021年將會發生變化以下變化:
 
 ### 雲端的挑戰與風險
 企業需要注意不能讓外部的使用者access到公司的雲端.駭客可能藉此
-竊取敏感性資料或者盜用運算資雲.
+竊取敏感性資料或者盜用運算資源.
 因此Access Management,Device Management,Email archive還有防火牆設定等措施就很重要.
 
 
