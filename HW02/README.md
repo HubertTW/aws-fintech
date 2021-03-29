@@ -32,12 +32,12 @@ import 剛剛在ec2產生的金鑰
 ![](https://i.imgur.com/l5A60u5.png)
 
 
-3. 連線ec2主機
+3. 連線ec2主機 <br>
 a. 匯入.ppk金鑰 <br>
 開啟putty--> <br>
 點選SSH--> <br>
 點選Auth--> <br>
-把剛剛產生的.ppk金鑰匯進來
+把剛剛產生的.ppk金鑰匯進來 <br>
 ![](https://i.imgur.com/tk0CABq.png =500x500)
 b. 連線EC2 <br>
 把EC2上public IP寫入PuTTy--> <br>
