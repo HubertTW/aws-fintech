@@ -98,11 +98,11 @@ $node index.js
 ![](https://i.imgur.com/RCbKTVR.png)
 
 2. 規格設定 <br>
-點選easy create
-![](https://i.imgur.com/D6y2Ked.png)
-設定database identifier
-設定username
-設定password
+點選easy create <br>
+![](https://i.imgur.com/D6y2Ked.png) <br>
+設定database identifier <br>
+設定username <br>
+設定password <br>
 ![](https://i.imgur.com/vpcCIwU.png)
 
 3. 建置database.js
