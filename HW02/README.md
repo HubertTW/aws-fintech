@@ -38,12 +38,12 @@ a. 匯入.ppk金鑰 <br>
 點選SSH--> <br>
 點選Auth--> <br>
 把剛剛產生的.ppk金鑰匯進來 <br>
-![](https://i.imgur.com/tk0CABq.png =500x500)
+![](https://i.imgur.com/tk0CABq.png) <br>
 b. 連線EC2 <br>
 把EC2上public IP寫入PuTTy--> <br>
 Save--> <br>
 open--> <br>
-輸入ec2-user
+輸入ec2-user <br>
 ![](https://i.imgur.com/fiVo6Vp.png)
 ![](https://i.imgur.com/5NGWUhg.png)
 
