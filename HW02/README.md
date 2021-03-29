@@ -27,7 +27,7 @@ e. 最後點下launch時,會跳出詢問是否產生新的金鑰對
 如果有現有的就用現有的,沒有的話就產生新的並下載.
 ![](https://i.imgur.com/oXZ9pF1.png)
 
-2. 產生.ppk金鑰
+2. 產生.ppk金鑰 <br>
 import 剛剛在ec2產生的金鑰
 ![](https://i.imgur.com/l5A60u5.png)
 
@@ -44,7 +44,7 @@ b. 連線EC2 <br>
 Save--> <br>
 open--> <br>
 輸入ec2-user
-![](https://i.imgur.com/fiVo6Vp.png =500x500)
+![](https://i.imgur.com/fiVo6Vp.png)
 ![](https://i.imgur.com/5NGWUhg.png)
 
 
