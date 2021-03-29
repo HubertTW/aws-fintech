@@ -1,7 +1,7 @@
 
 # HW2 Build a Website using Amazon EC2 with LAMP
-在這邊使用的是node.js+MySQL
-
+在這邊使用的是node.js+MySQL <br>
+總共有三部影片
 
 
 
