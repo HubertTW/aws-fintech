@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # About Cloud
 
 
@@ -63,17 +63,8 @@ Forbes預測2021年將會發生變化以下變化:
 
 
 
-<<<<<<< HEAD
 ref:
 1.[雲端運算](https://oosga.com/cloud-computing/)
 2.[雲端市場爆發與未來趨勢](https://findit.org.tw/researchPageV2.aspx?pageId=1582)
 3. [甲骨文預測2020-2025年十大雲端趨勢](https://ctee.com.tw/news/tech/229409.html)
-=======
-# About Cloud
->>>>>>> 5f35c25b8d2495a3f9c5f2393caae70037037df7
-=======
-ref:<br>
-1.[雲端運算](https://oosga.com/cloud-computing/)<br>
-2.[雲端市場爆發與未來趨勢](https://findit.org.tw/researchPageV2.aspx?pageId=1582)<br>
-3. [甲骨文預測2020-2025年十大雲端趨勢](https://ctee.com.tw/news/tech/229409.html)
->>>>>>> 563c875797569a2d51676fd228d2da28e1e89747
+
