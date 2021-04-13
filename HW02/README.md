@@ -27,23 +27,24 @@ e. 最後點下launch時,會跳出詢問是否產生新的金鑰對
 如果有現有的就用現有的,沒有的話就產生新的並下載.
 ![](https://i.imgur.com/oXZ9pF1.png)
 
-2. 產生.ppk金鑰
+2. 產生.ppk金鑰 <br>
 import 剛剛在ec2產生的金鑰
 ![](https://i.imgur.com/l5A60u5.png)
 
 
-3. 連線ec2主機
-a. 匯入.ppk金鑰 
-開啟putty-->
-點選SSH-->點選Auth-->
-把剛剛產生的.ppk金鑰匯進來
-![](https://i.imgur.com/tk0CABq.png =500x500)
-b. 連線EC2 
-把EC2上public IP寫入PuTTy-->
-Save-->
-open-->
-輸入ec2-user
-![](https://i.imgur.com/fiVo6Vp.png =500x500)
+3. 連線ec2主機 <br>
+a. 匯入.ppk金鑰 <br>
+開啟putty--> <br>
+點選SSH--> <br>
+點選Auth--> <br>
+把剛剛產生的.ppk金鑰匯進來 <br>
+![](https://i.imgur.com/tk0CABq.png) <br>
+b. 連線EC2 <br>
+把EC2上public IP寫入PuTTy--> <br>
+Save--> <br>
+open--> <br>
+輸入ec2-user <br>
+![](https://i.imgur.com/fiVo6Vp.png)
 ![](https://i.imgur.com/5NGWUhg.png)
 
 
@@ -51,15 +52,15 @@ open-->
 
 ## 在EC2上架node.js
 
-1. 新增inbound rules
-點選安全群組-->
-點選傳入規則-->
-點選編輯傳入規則-->
-新增一個規則-->
-設定如下:
-port:3000
-類型:客製 TCP
-來源:0.0.0.0/0
+1. 新增inbound rules <br>
+點選安全群組--> <br>
+點選傳入規則--> <br>
+點選編輯傳入規則--> <br>
+新增一個規則--> <br>
+設定如下: <br>
+port:3000 <br>
+類型:客製 TCP <br>
+來源:0.0.0.0/0 <br>
 2. 將你的index.js檔案上傳上去
 ```=js
 //index.js
@@ -92,16 +93,16 @@ $node index.js
 ## 在RDS上架MySQL
 
 
-1. 進入RDS頁面
+1. 進入RDS頁面 <br>
 點選create database
 ![](https://i.imgur.com/RCbKTVR.png)
 
-2. 規格設定
-點選easy create
-![](https://i.imgur.com/D6y2Ked.png)
-設定database identifier
-設定username
-設定password
+2. 規格設定 <br>
+點選easy create <br>
+![](https://i.imgur.com/D6y2Ked.png) <br>
+設定database identifier <br>
+設定username <br>
+設定password <br>
 ![](https://i.imgur.com/vpcCIwU.png)
 
 3. 建置database.js
