@@ -1,7 +1,7 @@
 
 # HW2 Build a Website using Amazon EC2 with LAMP
-在這邊使用的是node.js+MySQL
-
+在這邊使用的是node.js+MySQL <br>
+總共有三部影片
 
 
 
@@ -20,11 +20,11 @@ a. 點選啟動執行個體
 ![](https://i.imgur.com/lk6XIqC.png)
 b. 點選Amazon Linux 2 AMI (HVM),SSD Volume Type 
 ![](https://i.imgur.com/uktphBJ.png)
-c. 點選t2 micro
+c. 點選t2 micro 
 ![](https://i.imgur.com/m3eCsi8.png)
-d. 在step 7 前都默認即可
-e. 最後點下launch時,會跳出詢問是否產生新的金鑰對
-如果有現有的就用現有的,沒有的話就產生新的並下載.
+d. 在step 7 前都默認即可 <br>
+e. 最後點下launch時,會跳出詢問是否產生新的金鑰對 <br>
+如果有現有的就用現有的,沒有的話就產生新的並下載. <br>
 ![](https://i.imgur.com/oXZ9pF1.png)
 
 2. 產生.ppk金鑰 <br>
