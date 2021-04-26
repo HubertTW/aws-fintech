@@ -1,48 +1,51 @@
-## HW03  Build a Website using Amazon S3(Versioning) and AWS Amplify
-網頁部署的方式有非常多種,我們可以依照每個專案的需求使用不一樣的服務.<br>
+## HW04 Build a Telegram Chatbot using Amazon API Gateway and AWS Lambda
 
 
-### 使用S3部署靜態公開網頁
+### 建立function 
 
-
-
-1. 建立一個S3 bucket(皆為預設值)<br>
-2. 將靜態網頁從local pc上傳<br>
-3. 開啟bucket-versioning<br>
-![](https://i.imgur.com/r1TF0Ho.png)<br>
-4. 上傳新版本的檔案(記得打開list-version)<br>
-5. 設定預設首頁<br>
-![](https://i.imgur.com/yVSsznP.png)<br>
-6. 開啟所有權限<br>
-7. 新增policy<br>
-resource 記得改成自己的bucket arn<br>
-![](https://i.imgur.com/sn51F3G.png)<br>
-```
-
-{
-  "Version":"2012-10-17",
-  "Statement":[
-    {
-      "Sid":"PublicRead",
-      "Effect":"Allow",
-      "Principal": "*",
-      "Action":["s3:GetObject","s3:GetObjectVersion"],
-      "Resource":["arn:aws:s3:::aws-fintech-hw03"]
-    }
-  ]
-}
+1. 建立function <br>
+![](https://i.imgur.com/zO4jJoV.png)<br>
+2. 上傳檔案 <br>
+![](https://i.imgur.com/NjRvpEm.png)<br>
+3. 修改eventHandler檔案主程式名稱<br>
+![](https://i.imgur.com/npDW8RN.png)<br>
 
 ```
-8. 將網站設為公有<br>
-![](https://i.imgur.com/PCgPW6X.png)<br>
+//修改格式
+你的主程式名稱.處理事件的函式名稱
+```
+4. 新增layer <br>
+如果想要匯入程式語言的某些套件就必須新增layer<br>
+a. 在本地建立的個與你函數所用的語言相同名稱的資料夾(例如python)<br>
+b. 在該資料夾下載你需要的套件包<br>
+```=shell
+pip install requests -t .
+```
+c. 點選新增layer<br>
+![](https://i.imgur.com/VwpLD9V.png)<br>
+d. 上傳你的套件包.zip(例如python.zip)<br>
+e. 回到function主頁新增layer<br>
+![](https://i.imgur.com/R178T2V.png)<br>
+<br>
+5. 新增trigger <br>
+照圖中的方式設定即可<br>
+![](https://i.imgur.com/vpXkniK.png)<br>
+6. 取消代理整合(proxy integration)<br>
+a. 點擊藍色字體連結<br>
+![](https://i.imgur.com/u8lg2L3.png)<br>
+b. 點選整合請求<br>
+![](https://i.imgur.com/Uv0pj6I.png)<br>
+c. 取消"使用lambda代理整合"<br>
+如此API傳回的response會較為精簡<br>
+![](https://i.imgur.com/UkgBFIN.png)<br>
+d. 做完後記得進行部署<br>
+使用default即可<br>
+![](https://i.imgur.com/ATK009y.png)<br>
+7. 設定參數<br>
+a. 複製API endpoit <br>
+![](https://i.imgur.com/rs77yNo.png)<br>
+b. 貼在config.py裡的WEBHOOK_URL<br>
+![](https://i.imgur.com/kFvYbZU.png)<br>
+c. 將你的telegram bot的TOKEN貼在config.py<br>
+d. 設定完記得點選Deploy!<br>
 
-* 我們可以使用S3提供的API來設計檔案上傳相關的功能<br>
-https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html<br>
-
-
-
-### 使用AWS Amplify建立靜態網頁<br>
-1. 使用amplify建立一個新的app<br>
-使用github的方式進行版本管理<br>
-![](https://i.imgur.com/zEa1pnV.png)<br>
-2. 部署完成<br>
