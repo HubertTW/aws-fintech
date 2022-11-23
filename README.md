@@ -1,5 +1,9 @@
 # 10902FinTech
 
+本課程分為兩部份
+1. AWS基本操作每週皆有練習作業
+2. 金融科技專案 
+
 # 109-2-Salesperson-risk-detection
 * 南山人壽題目_第二組 【業務員風險偵測】
 * Team Member : 4人
